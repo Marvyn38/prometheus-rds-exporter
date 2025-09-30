@@ -12,7 +12,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-2025
     steps:
     - uses: actions/checkout@v4
 
@@ -25,4 +25,4 @@ jobs:
       run: go build -v -o rds_exporter.exe
 
     - name: Test
-      run: go test -v -o rds_exporter.exe
+      run: go test -v
